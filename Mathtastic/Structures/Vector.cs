@@ -87,6 +87,16 @@ namespace Mathtastic.Structures
             };
         }
 
+        public Vector Scale(Vector scalingVector)
+        {
+            return new Vector
+            {
+                X = X*scalingVector.X,
+                Y = Y*scalingVector.Y,
+                Z = Z*scalingVector.Z
+            };
+        }
+
         public void PrintVectorToScreen()
         {
             Console.WriteLine("{{{0}, {1}, {2}}}", X, Y, Z);
