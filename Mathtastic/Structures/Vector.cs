@@ -1,4 +1,5 @@
 ﻿using System;
+using Mathtastic.Helpers;
 
 namespace Mathtastic.Structures
 {
@@ -11,6 +12,13 @@ namespace Mathtastic.Structures
         public Vector()
         {
             X = Y = Z = 0;
+        }
+
+        public Vector(int x, int y, int z)
+        {
+            X = x;
+            Y = y;
+            Z = z;
         }
 
         public Vector FindCrossProduct(Vector bVector)
@@ -40,6 +48,42 @@ namespace Mathtastic.Structures
                 X = X - vector.X,
                 Y = Y - vector.Y,
                 Z = Z - vector.Z
+            };
+        }
+
+        public Vector RotateXy(double degrees)
+        {
+            var rad = degrees.ToRadians();
+
+            return new Vector
+            {
+                X = Convert.ToInt32(Math.Cos(rad) * X) + -Convert.ToInt32(Math.Sin(rad) * Y),
+                Y = Convert.ToInt32(Math.Sin(rad) * X) + Convert.ToInt32(Math.Cos(rad) * Y),
+                Z = Z
+            };
+        }
+
+        public Vector RotateXz(double degrees)
+        {
+            var rad = degrees.ToRadians();
+
+            return new Vector
+            {
+                X = Convert.ToInt32(Math.Cos(rad) * X) + Convert.ToInt32(Math.Sin(rad) * Z),
+                Y = Y,
+                Z = -Convert.ToInt32(Math.Sin(rad) * X) + Convert.ToInt32(Math.Cos(rad) * Z),
+            };
+        }
+
+        public Vector RotateYz(double degrees)
+        {
+            var rad = degrees.ToRadians();
+
+            return new Vector
+            {
+                X = X,
+                Y = Convert.ToInt32(Math.Cos(rad) * Y) + -Convert.ToInt32(Math.Sin(rad) * Z),
+                Z = Convert.ToInt32(Math.Sin(rad) * Y) + Convert.ToInt32(Math.Cos(rad) * Z),
             };
         }
 

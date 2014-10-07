@@ -12,6 +12,9 @@ namespace Mathtastic
             // Find Cross Product of two vectors
             examples.FindCrossProduct();
 
+            // Performs different rotations of a vector
+            examples.RotateVector();
+
             // Add Two Matrices
             examples.AddMatrices();
 
@@ -71,7 +74,7 @@ namespace Mathtastic
         public void FindCrossProduct()
         {
             Console.WriteLine("Finding Cross Product of two Vectors:");
-            var aVector = new Vector()
+            var aVector = new Vector
             {
                 X = 5,
                 Y = 1,
@@ -79,7 +82,7 @@ namespace Mathtastic
             };
             aVector.PrintVectorToScreen();
 
-            var bVector = new Vector()
+            var bVector = new Vector
             {
                 X = -1,
                 Y = 0,
@@ -89,6 +92,23 @@ namespace Mathtastic
 
             var cVector = aVector.FindCrossProduct(bVector);
             cVector.PrintVectorToScreen();
+        }
+
+        public void RotateVector()
+        {
+            var aVector = new Vector(3, 4, 5);
+
+            Console.WriteLine("Rotating it 90 degrees around XY");
+            var bVector = aVector.RotateXy(90);
+            bVector.PrintVectorToScreen();
+
+            Console.WriteLine("Rotating it 180 degrees around XZ");
+            bVector = aVector.RotateXz(180);
+            bVector.PrintVectorToScreen();
+
+            Console.WriteLine("Rotating it -45 degrees around YZ");
+            bVector = aVector.RotateYz(-45);
+            bVector.PrintVectorToScreen();
         }
     }
 }

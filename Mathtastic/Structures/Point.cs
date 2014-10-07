@@ -13,6 +13,13 @@ namespace Mathtastic.Structures
             X = Y = Z = 0;
         }
 
+        public Point(int x, int y, int z)
+        {
+            X = x;
+            Y = y;
+            Z = z;
+        }
+
         public Point AddVector(Vector vector)
         {
             return new Point
