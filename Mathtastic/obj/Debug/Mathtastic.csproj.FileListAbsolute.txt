@@ -1,0 +1,12 @@
+c:\users\tsmith12\documents\visual studio 2013\Projects\Mathtastic\bin\Debug\Mathtastic.exe.config
+c:\users\tsmith12\documents\visual studio 2013\Projects\Mathtastic\bin\Debug\Mathtastic.exe
+c:\users\tsmith12\documents\visual studio 2013\Projects\Mathtastic\bin\Debug\Mathtastic.pdb
+c:\users\tsmith12\documents\visual studio 2013\Projects\Mathtastic\obj\Debug\Mathtastic.csprojResolveAssemblyReference.cache
+c:\users\tsmith12\documents\visual studio 2013\Projects\Mathtastic\obj\Debug\Mathtastic.exe
+c:\users\tsmith12\documents\visual studio 2013\Projects\Mathtastic\obj\Debug\Mathtastic.pdb
+C:\Users\tsmith12\Documents\GitHub\3D-engine\Mathtastic\bin\Debug\Mathtastic.exe.config
+C:\Users\tsmith12\Documents\GitHub\3D-engine\Mathtastic\obj\Debug\Mathtastic.exe
+C:\Users\tsmith12\Documents\GitHub\3D-engine\Mathtastic\obj\Debug\Mathtastic.pdb
+C:\Users\tsmith12\Documents\GitHub\3D-engine\Mathtastic\bin\Debug\Mathtastic.exe
+C:\Users\tsmith12\Documents\GitHub\3D-engine\Mathtastic\bin\Debug\Mathtastic.pdb
+C:\Users\tsmith12\Documents\GitHub\3D-engine\Mathtastic\obj\Debug\Mathtastic.csprojResolveAssemblyReference.cache
