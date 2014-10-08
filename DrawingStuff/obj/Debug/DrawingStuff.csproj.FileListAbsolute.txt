@@ -1,0 +1,11 @@
+C:\Users\tsmith12\Documents\GitHub\3D-engine\DrawingStuff\bin\Debug\DrawingStuff.exe.config
+C:\Users\tsmith12\Documents\GitHub\3D-engine\DrawingStuff\bin\Debug\DrawingStuff.exe
+C:\Users\tsmith12\Documents\GitHub\3D-engine\DrawingStuff\bin\Debug\DrawingStuff.pdb
+C:\Users\tsmith12\Documents\GitHub\3D-engine\DrawingStuff\obj\Debug\DrawingStuff.csprojResolveAssemblyReference.cache
+C:\Users\tsmith12\Documents\GitHub\3D-engine\DrawingStuff\obj\Debug\DrawingStuff.Form1.resources
+C:\Users\tsmith12\Documents\GitHub\3D-engine\DrawingStuff\obj\Debug\DrawingStuff.Properties.Resources.resources
+C:\Users\tsmith12\Documents\GitHub\3D-engine\DrawingStuff\obj\Debug\DrawingStuff.csproj.GenerateResource.Cache
+C:\Users\tsmith12\Documents\GitHub\3D-engine\DrawingStuff\obj\Debug\DrawingStuff.exe
+C:\Users\tsmith12\Documents\GitHub\3D-engine\DrawingStuff\obj\Debug\DrawingStuff.pdb
+C:\Users\tsmith12\Documents\GitHub\3D-engine\DrawingStuff\bin\Debug\Mathtastic.dll
+C:\Users\tsmith12\Documents\GitHub\3D-engine\DrawingStuff\bin\Debug\Mathtastic.pdb

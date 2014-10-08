@@ -5,26 +5,26 @@ namespace Mathtastic
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-            var examples = new Examples();
+      //  static void Main(string[] args)
+      //  {
+            //var examples = new Examples();
 
-            // Find Cross Product of two vectors
-            examples.FindCrossProduct();
+            //// Find Cross Product of two vectors
+            //examples.FindCrossProduct();
 
-            // Performs different rotations of a vector
-            examples.RotateVector();
+            //// Performs different rotations of a vector
+            //examples.RotateVector();
 
-            // Add Two Matrices
-            examples.AddMatrices();
+            //// Add Two Matrices
+            //examples.AddMatrices();
 
-            // Scalar Matrix Multipliaction
-            examples.ScalarMatrixMultiplication();
+            //// Scalar Matrix Multipliaction
+            //examples.ScalarMatrixMultiplication();
 
-            // Matrix Multiplication
-            examples.MultiplyMatrices();
+            //// Matrix Multiplication
+            //examples.MultiplyMatrices();
 
-        }
+        //}
     }
 
     public class Examples
