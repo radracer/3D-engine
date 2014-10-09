@@ -14,7 +14,7 @@ namespace Mathtastic.Structures
             X = Y = Z = 0;
         }
 
-        public Point(int x, int y, int z)
+        public Point(double x, double y, double z)
         {
             X = x;
             Y = y;
@@ -68,24 +68,32 @@ namespace Mathtastic.Structures
         {
             var rad = degrees.ToRadians();
 
-            X = Convert.ToInt32(Math.Cos(rad)*X) + -Convert.ToInt32(Math.Sin(rad)*Y);
-            Y = Convert.ToInt32(Math.Sin(rad)*X) + Convert.ToInt32(Math.Cos(rad)*Y);
+            X = Math.Cos(rad)*X + -Math.Sin(rad)*Y;
+            Y = Math.Sin(rad)*X + Math.Cos(rad)*Y;
         }
 
         public void RotateXz(double degrees)
         {
             var rad = degrees.ToRadians();
 
-            X = Convert.ToInt32(Math.Cos(rad)*X) + Convert.ToInt32(Math.Sin(rad)*Z);
-            Z = -Convert.ToInt32(Math.Sin(rad)*X) + Convert.ToInt32(Math.Cos(rad)*Z);
+            X = Math.Cos(rad)*X + Math.Sin(rad)*Z;
+            Z = -Math.Sin(rad)*X + Math.Cos(rad)*Z;
         }
 
         public void RotateYz(double degrees)
         {
             var rad = degrees.ToRadians();
 
-            Y = Convert.ToInt32(Math.Cos(rad)*Y) + -Convert.ToInt32(Math.Sin(rad)*Z);
-            Z = Convert.ToInt32(Math.Sin(rad)*Y) + Convert.ToInt32(Math.Cos(rad)*Z);
+            Y = Math.Cos(rad)*Y + -Math.Sin(rad)*Z;
+            Z = Math.Sin(rad)*Y + Math.Cos(rad)*Z;
+        }
+
+
+        public void Scale(Point scalingPoint)
+        {
+            X = X*scalingPoint.X;
+            Y = Y*scalingPoint.Y;
+            Z = Z*scalingPoint.Z;
         }
     }
 }

@@ -9,8 +9,8 @@ namespace DrawingStuff
     public partial class Form1 : Form
     {
         private Grid grid { get; set; }
-        const int gridSize = 700;
-        const int offset = 0;
+        const int gridSize = 600;
+        const int offset = 150;
 
         public Form1()
         {
@@ -23,7 +23,7 @@ namespace DrawingStuff
             grid = new Grid(gridSize, offset);
             var random = new Random(Guid.NewGuid().GetHashCode());
 
-            for (int x = 0; x < 30; x++)
+            for (int x = 0; x < 6; x++)
             {
                 var X = random.Next(-(gridSize / 2), gridSize / 2);
                 var Y = random.Next(-(gridSize / 2), gridSize / 2);
@@ -58,6 +58,12 @@ namespace DrawingStuff
         private void button3_Click(object sender, EventArgs e)
         {
             grid.RotatePointsYz(Int32.Parse(rotateYzDegrees.Text));
+            canvas.Refresh();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            grid.ScalePoints(Double.Parse(scalePoints.Text));
             canvas.Refresh();
         }
     }

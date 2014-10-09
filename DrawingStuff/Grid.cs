@@ -21,7 +21,7 @@ namespace DrawingStuff
 
         public void DrawGrid(PaintEventArgs e)
         {
-            using (var pen = new Pen(Color.DarkGray, 1))
+            using (var pen = new Pen(Color.DarkGray, 3))
             {
                 var verticalPoint1 = new Point((Size/2) + Offset, Offset);
                 var verticalPoint2 = new Point((Size/2) + Offset, Offset + Size);
@@ -31,11 +31,29 @@ namespace DrawingStuff
                 var horizaontalPoint2 = new Point(Offset + Size, (Size/2) + Offset);
                 e.Graphics.DrawLine(pen, horizaontalPoint1, horizaontalPoint2);
 
+                var linePen = new Pen(Color.OrangeRed, 1);
+                m.Point last = null;
                 Points.ForEach((p) =>
                 {
                     Brush brush = new SolidBrush(Color.Black);
-                    e.Graphics.FillRectangle(brush, Convert.ToInt64(p.X) + DistanceToCenter(), Convert.ToInt64(p.Y) + +DistanceToCenter(), 2, 2);
+                    e.Graphics.FillRectangle(brush, Convert.ToInt64(p.X) + DistanceToCenter(), Convert.ToInt64(p.Y) + +DistanceToCenter(), 3, 3);
+
+                    var thisPoint = new Point();
+                    thisPoint.X = Convert.ToInt32(p.X) + Offset + (Size / 2) + 1;
+                    thisPoint.Y = Convert.ToInt32(p.Y) + Offset + (Size / 2) + 1;
+
+                    if (last != null)
+                    {
+                        var lastPoint = new Point();
+                        lastPoint.X = Convert.ToInt32(last.X) + Offset + (Size / 2) + 1;
+                        lastPoint.Y = Convert.ToInt32(last.Y) + Offset + (Size / 2) + 1;
+                        e.Graphics.DrawLine(linePen, lastPoint, thisPoint);
+                    }
+                    last = p;
                 });
+
+                
+
             }
         }
 
@@ -56,6 +74,11 @@ namespace DrawingStuff
         public void RotatePointsYz(int degrees)
         {
             Points.ForEach((p) => p.RotateYz(degrees));
+        }
+        public void ScalePoints(double amount)
+        {
+            var scalingPoint = new m.Point(amount, amount, amount);
+            Points.ForEach((p) => p.Scale(scalingPoint));
         }
         #region Boundaries
 
