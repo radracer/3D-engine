@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 using m = Mathtastic.Structures;
@@ -33,7 +34,7 @@ namespace DrawingStuff
                 Points.ForEach((p) =>
                 {
                     Brush brush = new SolidBrush(Color.Black);
-                    e.Graphics.FillRectangle(brush, p.X + DistanceToCenter(), p.Y + +DistanceToCenter(), 2, 2);
+                    e.Graphics.FillRectangle(brush, Convert.ToInt64(p.X) + DistanceToCenter(), Convert.ToInt64(p.Y) + +DistanceToCenter(), 2, 2);
                 });
             }
         }

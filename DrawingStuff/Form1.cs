@@ -27,7 +27,7 @@ namespace DrawingStuff
             {
                 var X = random.Next(-(gridSize / 2), gridSize / 2);
                 var Y = random.Next(-(gridSize / 2), gridSize / 2);
-                var Z = random.Next(0, gridSize / 100);
+                var Z = random.Next(-(gridSize / 2), gridSize / 2);
                 var newPoint = new m.Point(X, Y, Z);
                 grid.AddPoint(newPoint);
             }

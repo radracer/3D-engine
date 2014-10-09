@@ -5,9 +5,9 @@ namespace Mathtastic.Structures
 {
     public class Vector
     {
-        public int X { get; set; }
-        public int Y { get; set; }
-        public int Z { get; set; }
+        public double X { get; set; }
+        public double Y { get; set; }
+        public double Z { get; set; }
 
         public Vector()
         {
@@ -57,8 +57,8 @@ namespace Mathtastic.Structures
 
             return new Vector
             {
-                X = Convert.ToInt32(Math.Cos(rad) * X) + -Convert.ToInt32(Math.Sin(rad) * Y),
-                Y = Convert.ToInt32(Math.Sin(rad) * X) + Convert.ToInt32(Math.Cos(rad) * Y),
+                X = Math.Cos(rad) * X + -Math.Sin(rad) * Y,
+                Y = Math.Sin(rad) * X +  Math.Cos(rad) * Y,
                 Z = Z
             };
         }
@@ -69,9 +69,9 @@ namespace Mathtastic.Structures
 
             return new Vector
             {
-                X = Convert.ToInt32(Math.Cos(rad) * X) + Convert.ToInt32(Math.Sin(rad) * Z),
+                X = Math.Cos(rad) * X + Math.Sin(rad) * Z,
                 Y = Y,
-                Z = -Convert.ToInt32(Math.Sin(rad) * X) + Convert.ToInt32(Math.Cos(rad) * Z),
+                Z = -Math.Sin(rad) * X + Math.Cos(rad) * Z,
             };
         }
 
@@ -82,8 +82,8 @@ namespace Mathtastic.Structures
             return new Vector
             {
                 X = X,
-                Y = Convert.ToInt32(Math.Cos(rad) * Y) + -Convert.ToInt32(Math.Sin(rad) * Z),
-                Z = Convert.ToInt32(Math.Sin(rad) * Y) + Convert.ToInt32(Math.Cos(rad) * Z),
+                Y = Math.Cos(rad) * Y + -Math.Sin(rad) * Z,
+                Z = Math.Sin(rad) * Y +  Math.Cos(rad) * Z,
             };
         }
 
