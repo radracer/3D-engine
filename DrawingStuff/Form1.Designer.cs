@@ -40,13 +40,17 @@ namespace DrawingStuff
             this.rotateXyDegrees = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.draw = new System.Windows.Forms.Button();
-            this.canvas = new System.Windows.Forms.Panel();
+            this.reset = new System.Windows.Forms.Panel();
+            this.numPoints = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.numPoints);
             this.panel1.Controls.Add(this.scalePoints);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.rotateYzDegrees);
@@ -142,32 +146,51 @@ namespace DrawingStuff
             // 
             this.draw.BackColor = System.Drawing.Color.White;
             this.draw.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.draw.Dock = System.Windows.Forms.DockStyle.Right;
             this.draw.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.draw.Location = new System.Drawing.Point(791, 0);
+            this.draw.Location = new System.Drawing.Point(762, 0);
             this.draw.Name = "draw";
-            this.draw.Size = new System.Drawing.Size(44, 41);
+            this.draw.Size = new System.Drawing.Size(73, 41);
             this.draw.TabIndex = 3;
-            this.draw.Text = "Go";
+            this.draw.Text = "Reset";
             this.draw.UseVisualStyleBackColor = false;
             this.draw.Click += new System.EventHandler(this.draw_Click);
             // 
-            // canvas
+            // reset
             // 
-            this.canvas.BackColor = System.Drawing.SystemColors.Window;
-            this.canvas.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.canvas.Location = new System.Drawing.Point(0, 0);
-            this.canvas.Name = "canvas";
-            this.canvas.Size = new System.Drawing.Size(835, 693);
-            this.canvas.TabIndex = 1;
-            this.canvas.Paint += new System.Windows.Forms.PaintEventHandler(this.canvas_Paint);
+            this.reset.BackColor = System.Drawing.SystemColors.Window;
+            this.reset.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.reset.Location = new System.Drawing.Point(0, 0);
+            this.reset.Name = "reset";
+            this.reset.Size = new System.Drawing.Size(835, 693);
+            this.reset.TabIndex = 1;
+            this.reset.Paint += new System.Windows.Forms.PaintEventHandler(this.canvas_Paint);
+            // 
+            // numPoints
+            // 
+            this.numPoints.Location = new System.Drawing.Point(713, 12);
+            this.numPoints.Name = "numPoints";
+            this.numPoints.Size = new System.Drawing.Size(43, 20);
+            this.numPoints.TabIndex = 12;
+            this.numPoints.Text = "6";
+            this.numPoints.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(655, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(56, 18);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Points";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(835, 734);
-            this.Controls.Add(this.canvas);
+            this.Controls.Add(this.reset);
             this.Controls.Add(this.panel1);
             this.KeyPreview = true;
             this.Name = "Form1";
@@ -185,7 +208,7 @@ namespace DrawingStuff
         #endregion
 
         private Panel panel1;
-        private Panel canvas;
+        private Panel reset;
         private Button draw;
         private Button button1;
         private TextBox rotateXyDegrees;
@@ -195,6 +218,8 @@ namespace DrawingStuff
         private Button button2;
         private TextBox scalePoints;
         private Button button4;
+        private Label label1;
+        private TextBox numPoints;
 
     }
 }

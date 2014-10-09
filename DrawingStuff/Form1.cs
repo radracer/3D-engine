@@ -22,7 +22,7 @@ namespace DrawingStuff
             grid = new Grid(gridSize, offset);
             var random = new Random(Guid.NewGuid().GetHashCode());
 
-            for (int x = 0; x < 6; x++)
+            for (int x = 0; x < Int32.Parse(numPoints.Text); x++)
             {
                 var X = random.Next(-(gridSize / 2), gridSize / 2);
                 var Y = random.Next(-(gridSize / 2), gridSize / 2);
@@ -31,7 +31,7 @@ namespace DrawingStuff
                 grid.AddPoint(newPoint);
             }
 
-            canvas.Refresh();
+            reset.Refresh();
         }
 
         private void draw_Click(object sender, EventArgs e)
@@ -47,25 +47,25 @@ namespace DrawingStuff
         private void button1_Click(object sender, EventArgs e)
         {
             grid.RotatePointsXy(Int32.Parse(rotateXyDegrees.Text));
-            canvas.Refresh();
+            reset.Refresh();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             grid.RotatePointsXz(Int32.Parse(rotateXzDegrees.Text));
-            canvas.Refresh();
+            reset.Refresh();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             grid.RotatePointsYz(Int32.Parse(rotateYzDegrees.Text));
-            canvas.Refresh();
+            reset.Refresh();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             grid.ScalePoints(Double.Parse(scalePoints.Text));
-            canvas.Refresh();
+            reset.Refresh();
         }
 
         void Form1_KeyPress(object sender, KeyEventArgs e)
@@ -133,7 +133,7 @@ namespace DrawingStuff
                     grid.RotatePointsXz(amount);
                 }
 
-                canvas.Refresh();
+                reset.Refresh();
             }
         }
 
