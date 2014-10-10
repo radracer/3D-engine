@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 using m = Mathtastic.Structures;
@@ -21,6 +22,7 @@ namespace DrawingStuff
 
         public void DrawGrid(PaintEventArgs e)
         {
+<<<<<<< HEAD
             //build Mesh frame with vertices
             var mesh = new Mathtastic.Structures.Mesh("Cube!", 8);
 
@@ -32,8 +34,16 @@ namespace DrawingStuff
             mesh.Vertices[5] = new m.Vector(1, 1, -1);
             mesh.Vertices[6] = new m.Vector(1, -1, 1);
             mesh.Vertices[7] = new m.Vector(1, -1, -1);
+=======
+            using (var pen = new Pen(Color.DarkGray, 3))
+            {
+                var verticalPoint1 = new Point((Size/2) + Offset, Offset);
+                var verticalPoint2 = new Point((Size/2) + Offset, Offset + Size);
+                e.Graphics.DrawLine(pen, verticalPoint1, verticalPoint2);
+>>>>>>> origin/master
 
 
+<<<<<<< HEAD
             try
             {
                 using (var pen = new Pen(Color.DarkGray, 1))
@@ -74,6 +84,31 @@ namespace DrawingStuff
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message.ToString());
+=======
+                var linePen = new Pen(Color.OrangeRed, 1);
+                m.Point last = null;
+                Points.ForEach((p) =>
+                {
+                    Brush brush = new SolidBrush(Color.Black);
+                    e.Graphics.FillRectangle(brush, Convert.ToInt64(p.X) + DistanceToCenter(), Convert.ToInt64(p.Y) + +DistanceToCenter(), 3, 3);
+
+                    var thisPoint = new Point();
+                    thisPoint.X = Convert.ToInt32(p.X) + Offset + (Size / 2) + 1;
+                    thisPoint.Y = Convert.ToInt32(p.Y) + Offset + (Size / 2) + 1;
+
+                    if (last != null)
+                    {
+                        var lastPoint = new Point();
+                        lastPoint.X = Convert.ToInt32(last.X) + Offset + (Size / 2) + 1;
+                        lastPoint.Y = Convert.ToInt32(last.Y) + Offset + (Size / 2) + 1;
+                        e.Graphics.DrawLine(linePen, lastPoint, thisPoint);
+                    }
+                    last = p;
+                });
+
+                
+
+>>>>>>> origin/master
             }
         }
 
@@ -97,6 +132,11 @@ namespace DrawingStuff
         public void RotatePointsYz(float degrees)
         {
           //  Points.ForEach((p) => p.RotateYz(degrees));
+        }
+        public void ScalePoints(double amount)
+        {
+            var scalingPoint = new m.Point(amount, amount, amount);
+            Points.ForEach((p) => p.Scale(scalingPoint));
         }
         #region Boundaries
 
