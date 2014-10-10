@@ -99,15 +99,15 @@ namespace Mathtastic
             var aVector = new Vector(3, 4, 5);
 
             Console.WriteLine("Rotating it 90 degrees around XY");
-            var bVector = aVector.RotateXy(90);
+            var bVector = aVector; //.RotateXy(90);
             bVector.PrintVectorToScreen();
 
             Console.WriteLine("Rotating it 180 degrees around XZ");
-            bVector = aVector.RotateXz(180);
+           // bVector = aVector.RotateXz(180);
             bVector.PrintVectorToScreen();
 
             Console.WriteLine("Rotating it -45 degrees around YZ");
-            bVector = aVector.RotateYz(-45);
+           // bVector = aVector.RotateYz(-45);
             bVector.PrintVectorToScreen();
         }
     }

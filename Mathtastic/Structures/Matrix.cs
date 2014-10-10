@@ -38,23 +38,35 @@ namespace Mathtastic.Structures
             var newColCnt = bMatrix.GetColumnCount();
             
             var returnMatrix = new Matrix(newRowCnt, newColCnt);
-
-            for (var y = 0; y < newRowCnt; y++)
-            {
-                for (var z = 0; z < newColCnt; z++)
+           
+                for (var y = 0; y < newRowCnt; y++)
                 {
-                    var total = 0;
-
-                    for (var a = 0; a < aMatrix.GetColumnCount(); a++)
+                    for (var z = 0; z < newColCnt; z++)
                     {
-                        total += aMatrix.Elements[y, a] * bMatrix.Elements[a, z];
-                    }
+                        var total = 0;
 
-                    returnMatrix.Elements[y, z] = total;
+                        for (var a = 0; a < aMatrix.GetColumnCount(); a++)
+                        {
+                            total += aMatrix.Elements[y, a] * bMatrix.Elements[a, z];
+                        }
+
+                        returnMatrix.Elements[y, z] = total;
+                    }
                 }
-            }
+            
 
             return returnMatrix;
+        }
+
+        public Matrix IdentityMatrix()
+        {
+            Matrix IdenMatrix = new Matrix(4, 4);
+            IdenMatrix.Elements[0, 0] = 1; IdenMatrix.Elements[0, 1] = 0; IdenMatrix.Elements[0, 2] = 0; IdenMatrix.Elements[0, 3] = 0;
+            IdenMatrix.Elements[1, 0] = 0; IdenMatrix.Elements[1, 1] = 1; IdenMatrix.Elements[1, 2] = 0; IdenMatrix.Elements[1, 3] = 0;
+            IdenMatrix.Elements[2, 0] = 0; IdenMatrix.Elements[2, 1] = 0; IdenMatrix.Elements[2, 2] = 1; IdenMatrix.Elements[2, 3] = 0;
+            IdenMatrix.Elements[3, 0] = 0; IdenMatrix.Elements[3, 1] = 0; IdenMatrix.Elements[3, 2] = 0; IdenMatrix.Elements[3, 3] = 1;
+
+            return IdenMatrix;
         }
 
         public Matrix AddMatrix(Matrix bMatrix)

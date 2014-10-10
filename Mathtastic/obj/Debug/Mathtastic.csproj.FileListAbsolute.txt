@@ -9,3 +9,9 @@ C:\Users\tsmith12\Documents\GitHub\3D-engine\Mathtastic\bin\Debug\Mathtastic.pdb
 C:\Users\tsmith12\Documents\GitHub\3D-engine\Mathtastic\bin\Debug\Mathtastic.dll.config
 C:\Users\tsmith12\Documents\GitHub\3D-engine\Mathtastic\bin\Debug\Mathtastic.dll
 C:\Users\tsmith12\Documents\GitHub\3D-engine\Mathtastic\obj\Debug\Mathtastic.dll
+C:\Users\adam_eidson\Documents\GitHub\3D-engine\Mathtastic\bin\Debug\Mathtastic.dll.config
+C:\Users\adam_eidson\Documents\GitHub\3D-engine\Mathtastic\bin\Debug\Mathtastic.dll
+C:\Users\adam_eidson\Documents\GitHub\3D-engine\Mathtastic\bin\Debug\Mathtastic.pdb
+C:\Users\adam_eidson\Documents\GitHub\3D-engine\Mathtastic\obj\Debug\Mathtastic.dll
+C:\Users\adam_eidson\Documents\GitHub\3D-engine\Mathtastic\obj\Debug\Mathtastic.pdb
+C:\Users\adam_eidson\Documents\GitHub\3D-engine\Mathtastic\obj\Debug\Mathtastic.csprojResolveAssemblyReference.cache

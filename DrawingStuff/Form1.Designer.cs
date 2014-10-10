@@ -31,14 +31,14 @@ namespace DrawingStuff
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.canvas = new System.Windows.Forms.Panel();
-            this.draw = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.rotateXyDegrees = new System.Windows.Forms.TextBox();
-            this.rotateXzDegrees = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.rotateYzDegrees = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
+            this.rotateXzDegrees = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.rotateXyDegrees = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.draw = new System.Windows.Forms.Button();
+            this.canvas = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,68 +55,8 @@ namespace DrawingStuff
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 693);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(835, 41);
+            this.panel1.Size = new System.Drawing.Size(833, 41);
             this.panel1.TabIndex = 0;
-            // 
-            // canvas
-            // 
-            this.canvas.BackColor = System.Drawing.SystemColors.Window;
-            this.canvas.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.canvas.Location = new System.Drawing.Point(0, 0);
-            this.canvas.Name = "canvas";
-            this.canvas.Size = new System.Drawing.Size(835, 693);
-            this.canvas.TabIndex = 1;
-            this.canvas.Paint += new System.Windows.Forms.PaintEventHandler(this.canvas_Paint);
-            // 
-            // draw
-            // 
-            this.draw.BackColor = System.Drawing.Color.White;
-            this.draw.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.draw.Dock = System.Windows.Forms.DockStyle.Right;
-            this.draw.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.draw.Location = new System.Drawing.Point(791, 0);
-            this.draw.Name = "draw";
-            this.draw.Size = new System.Drawing.Size(44, 41);
-            this.draw.TabIndex = 3;
-            this.draw.Text = "Go";
-            this.draw.UseVisualStyleBackColor = false;
-            this.draw.Click += new System.EventHandler(this.draw_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(8, 9);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(59, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "RotateXy";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // rotateXyDegrees
-            // 
-            this.rotateXyDegrees.Location = new System.Drawing.Point(74, 11);
-            this.rotateXyDegrees.Name = "rotateXyDegrees";
-            this.rotateXyDegrees.Size = new System.Drawing.Size(31, 20);
-            this.rotateXyDegrees.TabIndex = 5;
-            this.rotateXyDegrees.Text = "1";
-            // 
-            // rotateXzDegrees
-            // 
-            this.rotateXzDegrees.Location = new System.Drawing.Point(194, 11);
-            this.rotateXzDegrees.Name = "rotateXzDegrees";
-            this.rotateXzDegrees.Size = new System.Drawing.Size(31, 20);
-            this.rotateXzDegrees.TabIndex = 7;
-            this.rotateXzDegrees.Text = "1";
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(128, 9);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(59, 23);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "RotateXz";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // rotateYzDegrees
             // 
@@ -136,11 +76,71 @@ namespace DrawingStuff
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // rotateXzDegrees
+            // 
+            this.rotateXzDegrees.Location = new System.Drawing.Point(194, 11);
+            this.rotateXzDegrees.Name = "rotateXzDegrees";
+            this.rotateXzDegrees.Size = new System.Drawing.Size(31, 20);
+            this.rotateXzDegrees.TabIndex = 7;
+            this.rotateXzDegrees.Text = "1";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(128, 9);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(59, 23);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "RotateXz";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // rotateXyDegrees
+            // 
+            this.rotateXyDegrees.Location = new System.Drawing.Point(74, 11);
+            this.rotateXyDegrees.Name = "rotateXyDegrees";
+            this.rotateXyDegrees.Size = new System.Drawing.Size(31, 20);
+            this.rotateXyDegrees.TabIndex = 5;
+            this.rotateXyDegrees.Text = "1";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(8, 9);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(59, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "RotateXy";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // draw
+            // 
+            this.draw.BackColor = System.Drawing.Color.White;
+            this.draw.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.draw.Dock = System.Windows.Forms.DockStyle.Right;
+            this.draw.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.draw.Location = new System.Drawing.Point(789, 0);
+            this.draw.Name = "draw";
+            this.draw.Size = new System.Drawing.Size(44, 41);
+            this.draw.TabIndex = 3;
+            this.draw.Text = "Go";
+            this.draw.UseVisualStyleBackColor = false;
+            this.draw.Click += new System.EventHandler(this.draw_Click);
+            // 
+            // canvas
+            // 
+            this.canvas.BackColor = System.Drawing.SystemColors.Window;
+            this.canvas.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.canvas.Location = new System.Drawing.Point(0, 0);
+            this.canvas.Name = "canvas";
+            this.canvas.Size = new System.Drawing.Size(833, 693);
+            this.canvas.TabIndex = 1;
+            this.canvas.Paint += new System.Windows.Forms.PaintEventHandler(this.canvas_Paint);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(835, 734);
+            this.ClientSize = new System.Drawing.Size(833, 734);
             this.Controls.Add(this.canvas);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";

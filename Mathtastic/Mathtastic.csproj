@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Mathtastic</RootNamespace>
     <AssemblyName>Mathtastic</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -47,7 +47,10 @@
     <Compile Include="Helpers\Extensions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Structures\Camera.cs" />
     <Compile Include="Structures\Matrix.cs" />
+    <Compile Include="Structures\Mesh.cs" />
+    <Compile Include="Structures\Transformations.cs" />
     <Compile Include="Structures\Vector.cs" />
     <Compile Include="Structures\Point.cs" />
   </ItemGroup>
