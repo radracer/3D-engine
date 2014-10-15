@@ -1,0 +1,21 @@
+﻿Revert "Merge remote-tracking branch 'origin/master'"
+
+This reverts commit 2561f330874ce0563ade25e4896d18d6771d17aa, reversing
+changes made to 7a1b3c5109b8fa083e81a50d6f4a8aeb99426f41.
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   DrawingStuff/Form1.Designer.cs
+#	modified:   DrawingStuff/Form1.cs
+#	modified:   DrawingStuff/Grid.cs
+#	modified:   DrawingStuff/obj/Debug/DrawingStuff.csproj.FileListAbsolute.txt
+#	modified:   Mathtastic/Mathtastic.v12.suo
+#	modified:   Mathtastic/Structures/Point.cs
+#	modified:   Mathtastic/Structures/Vector.cs
+#	modified:   Mathtastic/obj/Debug/Mathtastic.csproj.FileListAbsolute.txt
+#
+

@@ -9,16 +9,11 @@ namespace DrawingStuff
     public partial class Form1 : Form
     {
         private Grid grid { get; set; }
-<<<<<<< HEAD
         const int gridSize = 700;
         const int offset = 0;
         //If xy_rotate is set to true, the corrdinates will rotate around the xy axis by 2 degrees each paint
         public bool xy_rotate = true;
 
-=======
-        const int gridSize = 600;
-        const int offset = 150;
->>>>>>> origin/master
 
         public Form1()
         {
@@ -27,10 +22,10 @@ namespace DrawingStuff
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            draw_Click(null, null);
             grid = new Grid(gridSize, offset);
             var random = new Random(Guid.NewGuid().GetHashCode());
 
-<<<<<<< HEAD
             for (int x = 0; x < 2; x++)
             {
                 var X = random.Next(-(gridSize / 2), gridSize / 2);
@@ -38,23 +33,13 @@ namespace DrawingStuff
                 var Z = random.Next(0, gridSize / 100);
                 var W = 1; //for all points, w = 1
                 var newPoint = new m.Point(X, Y, Z, W);
-=======
-            for (int x = 0; x < Int32.Parse(numPoints.Text); x++)
-            {
-                var X = random.Next(-(gridSize / 2), gridSize / 2);
-                var Y = random.Next(-(gridSize / 2), gridSize / 2);
-                var Z = random.Next(-(gridSize / 2), gridSize / 2);
-                var newPoint = new m.Point(X, Y, Z);
->>>>>>> origin/master
                 grid.AddPoint(newPoint);
             }
-
-            reset.Refresh();
         }
 
         private void draw_Click(object sender, EventArgs e)
         {
-            Form1_Load(null, null);
+            canvas.Refresh();
         }
 
         private void canvas_Paint(object sender, PaintEventArgs e)
@@ -69,115 +54,23 @@ namespace DrawingStuff
 
         private void button1_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             if (xy_rotate)
             {
                 xy_rotate = false;
             }
             else xy_rotate = true;
-=======
-            grid.RotatePointsXy(Int32.Parse(rotateXyDegrees.Text));
-            reset.Refresh();
->>>>>>> origin/master
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             grid.RotatePointsXz(float.Parse(rotateXzDegrees.Text));
             canvas.Refresh();
-=======
-            grid.RotatePointsXz(Int32.Parse(rotateXzDegrees.Text));
-            reset.Refresh();
->>>>>>> origin/master
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             grid.RotatePointsYz(float.Parse(rotateYzDegrees.Text));
             canvas.Refresh();
-=======
-            grid.RotatePointsYz(Int32.Parse(rotateYzDegrees.Text));
-            reset.Refresh();
         }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            grid.ScalePoints(Double.Parse(scalePoints.Text));
-            reset.Refresh();
->>>>>>> origin/master
-        }
-
-        void Form1_KeyPress(object sender, KeyEventArgs e)
-        {
-            if (!rotateXyDegrees.Focused && !rotateXzDegrees.Focused && !rotateYzDegrees.Focused && !scalePoints.Focused)
-            {
-                var amount = 1;
-                if (e.Control)
-                {
-                    amount = 5;
-                }
-                if (e.Alt)
-                {
-                    amount = 10;
-                }
-                if (e.Control && e.Alt)
-                {
-                    amount = 20;
-                }
-                var key = e.KeyCode;
-                if (key == Keys.OemPeriod)
-                {
-                    grid.RotatePointsXy(-amount);
-                }
-                if (key == Keys.Oemcomma)
-                {
-                    grid.RotatePointsXy(-amount);
-                }
-                if (key == Keys.NumPad4)
-                {
-                    grid.RotatePointsXz(-amount);
-                }
-                if (key == Keys.NumPad6)
-                {
-                    grid.RotatePointsXz(amount);
-                }
-                if (key == Keys.NumPad2)
-                {
-                    grid.RotatePointsYz(-amount);
-                }
-                if (key == Keys.NumPad8)
-                {
-                    grid.RotatePointsYz(amount);
-                }
-
-                if (key == Keys.NumPad9)
-                {
-                    grid.RotatePointsXz(amount);
-                    grid.RotatePointsYz(amount);
-                }
-                if (key == Keys.NumPad1)
-                {
-                    grid.RotatePointsXz(-amount);
-                    grid.RotatePointsYz(-amount);
-                }
-
-                if (key == Keys.NumPad7)
-                {
-                    grid.RotatePointsYz(amount);
-                    grid.RotatePointsXz(-amount);
-                }
-                if (key == Keys.NumPad3)
-                {
-                    grid.RotatePointsYz(-amount);
-                    grid.RotatePointsXz(amount);
-                }
-
-                reset.Refresh();
-            }
-        }
-
-  
     }
 }

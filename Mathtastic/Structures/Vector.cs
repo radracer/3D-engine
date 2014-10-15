@@ -51,55 +51,6 @@ namespace Mathtastic.Structures
             };
         }
 
-<<<<<<< HEAD
-=======
-        public Vector RotateXy(double degrees)
-        {
-            var rad = degrees.ToRadians();
-
-            return new Vector
-            {
-                X = Math.Cos(rad) * X + -Math.Sin(rad) * Y,
-                Y = Math.Sin(rad) * X +  Math.Cos(rad) * Y,
-                Z = Z
-            };
-        }
-
-        public Vector RotateXz(double degrees)
-        {
-            var rad = degrees.ToRadians();
-
-            return new Vector
-            {
-                X = Math.Cos(rad) * X + Math.Sin(rad) * Z,
-                Y = Y,
-                Z = -Math.Sin(rad) * X + Math.Cos(rad) * Z,
-            };
-        }
-
-        public Vector RotateYz(double degrees)
-        {
-            var rad = degrees.ToRadians();
-
-            return new Vector
-            {
-                X = X,
-                Y = Math.Cos(rad) * Y + -Math.Sin(rad) * Z,
-                Z = Math.Sin(rad) * Y +  Math.Cos(rad) * Z,
-            };
-        }
-
-        public Vector Scale(Vector scalingVector)
-        {
-            return new Vector
-            {
-                X = X*scalingVector.X,
-                Y = Y*scalingVector.Y,
-                Z = Z*scalingVector.Z
-            };
-        }
-
->>>>>>> origin/master
         public void PrintVectorToScreen()
         {
             Console.WriteLine("{{{0}, {1}, {2}}}", X, Y, Z);
