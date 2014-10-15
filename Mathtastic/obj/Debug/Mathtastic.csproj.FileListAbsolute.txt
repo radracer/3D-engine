@@ -1,6 +1,0 @@
-C:\Users\Tim\Documents\GitHub\3D-engine\Mathtastic\bin\Debug\Mathtastic.dll.config
-C:\Users\Tim\Documents\GitHub\3D-engine\Mathtastic\bin\Debug\Mathtastic.dll
-C:\Users\Tim\Documents\GitHub\3D-engine\Mathtastic\bin\Debug\Mathtastic.pdb
-C:\Users\Tim\Documents\GitHub\3D-engine\Mathtastic\obj\Debug\Mathtastic.csprojResolveAssemblyReference.cache
-C:\Users\Tim\Documents\GitHub\3D-engine\Mathtastic\obj\Debug\Mathtastic.dll
-C:\Users\Tim\Documents\GitHub\3D-engine\Mathtastic\obj\Debug\Mathtastic.pdb
