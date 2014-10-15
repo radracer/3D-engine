@@ -31,11 +31,8 @@ namespace DrawingStuff
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-<<<<<<< HEAD
-=======
             this.scalePoints = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
->>>>>>> origin/master
             this.rotateYzDegrees = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.rotateXzDegrees = new System.Windows.Forms.TextBox();
@@ -43,13 +40,11 @@ namespace DrawingStuff
             this.rotateXyDegrees = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.draw = new System.Windows.Forms.Button();
-<<<<<<< HEAD
-            this.canvas = new System.Windows.Forms.Panel();
-=======
+
             this.reset = new System.Windows.Forms.Panel();
             this.numPoints = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
->>>>>>> origin/master
+
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,8 +68,7 @@ namespace DrawingStuff
             this.panel1.Size = new System.Drawing.Size(833, 41);
             this.panel1.TabIndex = 0;
             // 
-<<<<<<< HEAD
-=======
+
             // scalePoints
             // 
             this.scalePoints.Location = new System.Drawing.Point(435, 11);
@@ -94,7 +88,7 @@ namespace DrawingStuff
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
->>>>>>> origin/master
+
             // rotateYzDegrees
             // 
             this.rotateYzDegrees.Location = new System.Drawing.Point(317, 11);
@@ -102,10 +96,9 @@ namespace DrawingStuff
             this.rotateYzDegrees.Size = new System.Drawing.Size(31, 20);
             this.rotateYzDegrees.TabIndex = 9;
             this.rotateYzDegrees.Text = "1";
-<<<<<<< HEAD
-=======
+
             this.rotateYzDegrees.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
->>>>>>> origin/master
+
             // 
             // button3
             // 
@@ -143,10 +136,9 @@ namespace DrawingStuff
             this.rotateXyDegrees.Size = new System.Drawing.Size(31, 20);
             this.rotateXyDegrees.TabIndex = 5;
             this.rotateXyDegrees.Text = "1";
-<<<<<<< HEAD
-=======
+
             this.rotateXyDegrees.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
->>>>>>> origin/master
+
             // 
             // button1
             // 
@@ -162,7 +154,7 @@ namespace DrawingStuff
             // 
             this.draw.BackColor = System.Drawing.Color.White;
             this.draw.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-<<<<<<< HEAD
+
             this.draw.Dock = System.Windows.Forms.DockStyle.Right;
             this.draw.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.draw.Location = new System.Drawing.Point(789, 0);
@@ -174,15 +166,7 @@ namespace DrawingStuff
             this.draw.Click += new System.EventHandler(this.draw_Click);
             // 
             // canvas
-            // 
-            this.canvas.BackColor = System.Drawing.SystemColors.Window;
-            this.canvas.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.canvas.Location = new System.Drawing.Point(0, 0);
-            this.canvas.Name = "canvas";
-            this.canvas.Size = new System.Drawing.Size(833, 693);
-            this.canvas.TabIndex = 1;
-            this.canvas.Paint += new System.Windows.Forms.PaintEventHandler(this.canvas_Paint);
-=======
+          
             this.draw.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.draw.Location = new System.Drawing.Point(762, 0);
             this.draw.Name = "draw";
@@ -221,19 +205,16 @@ namespace DrawingStuff
             this.label1.Size = new System.Drawing.Size(56, 18);
             this.label1.TabIndex = 13;
             this.label1.Text = "Points";
->>>>>>> origin/master
+
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(833, 734);
-            this.Controls.Add(this.canvas);
-=======
+           // this.Controls.Add(this.canvas);
             this.ClientSize = new System.Drawing.Size(835, 734);
             this.Controls.Add(this.reset);
->>>>>>> origin/master
             this.Controls.Add(this.panel1);
             this.KeyPreview = true;
             this.Name = "Form1";

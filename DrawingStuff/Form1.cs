@@ -9,16 +9,12 @@ namespace DrawingStuff
     public partial class Form1 : Form
     {
         private Grid grid { get; set; }
-<<<<<<< HEAD
+
         const int gridSize = 700;
         const int offset = 0;
         //If xy_rotate is set to true, the corrdinates will rotate around the xy axis by 2 degrees each paint
         public bool xy_rotate = true;
 
-=======
-        const int gridSize = 600;
-        const int offset = 150;
->>>>>>> origin/master
 
         public Form1()
         {
@@ -30,7 +26,7 @@ namespace DrawingStuff
             grid = new Grid(gridSize, offset);
             var random = new Random(Guid.NewGuid().GetHashCode());
 
-<<<<<<< HEAD
+
             for (int x = 0; x < 2; x++)
             {
                 var X = random.Next(-(gridSize / 2), gridSize / 2);
@@ -38,14 +34,7 @@ namespace DrawingStuff
                 var Z = random.Next(0, gridSize / 100);
                 var W = 1; //for all points, w = 1
                 var newPoint = new m.Point(X, Y, Z, W);
-=======
-            for (int x = 0; x < Int32.Parse(numPoints.Text); x++)
-            {
-                var X = random.Next(-(gridSize / 2), gridSize / 2);
-                var Y = random.Next(-(gridSize / 2), gridSize / 2);
-                var Z = random.Next(-(gridSize / 2), gridSize / 2);
-                var newPoint = new m.Point(X, Y, Z);
->>>>>>> origin/master
+
                 grid.AddPoint(newPoint);
             }
 
@@ -69,35 +58,27 @@ namespace DrawingStuff
 
         private void button1_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
+
             if (xy_rotate)
             {
                 xy_rotate = false;
             }
             else xy_rotate = true;
-=======
+
             grid.RotatePointsXy(Int32.Parse(rotateXyDegrees.Text));
             reset.Refresh();
->>>>>>> origin/master
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
-            grid.RotatePointsXz(float.Parse(rotateXzDegrees.Text));
-            canvas.Refresh();
-=======
+
             grid.RotatePointsXz(Int32.Parse(rotateXzDegrees.Text));
-            reset.Refresh();
->>>>>>> origin/master
+
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
-            grid.RotatePointsYz(float.Parse(rotateYzDegrees.Text));
-            canvas.Refresh();
-=======
+
             grid.RotatePointsYz(Int32.Parse(rotateYzDegrees.Text));
             reset.Refresh();
         }
@@ -106,7 +87,7 @@ namespace DrawingStuff
         {
             grid.ScalePoints(Double.Parse(scalePoints.Text));
             reset.Refresh();
->>>>>>> origin/master
+
         }
 
         void Form1_KeyPress(object sender, KeyEventArgs e)
