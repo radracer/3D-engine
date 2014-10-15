@@ -1,1 +1,12 @@
 C:\Users\adam_eidson\Documents\GitHub\3D-engine\DrawingStuff\bin\Debug\DrawingStuff.exe.config
+C:\Users\Tim\Documents\GitHub\3D-engine\DrawingStuff\bin\Debug\DrawingStuff.exe.config
+C:\Users\Tim\Documents\GitHub\3D-engine\DrawingStuff\bin\Debug\DrawingStuff.exe
+C:\Users\Tim\Documents\GitHub\3D-engine\DrawingStuff\bin\Debug\DrawingStuff.pdb
+C:\Users\Tim\Documents\GitHub\3D-engine\DrawingStuff\bin\Debug\Mathtastic.dll
+C:\Users\Tim\Documents\GitHub\3D-engine\DrawingStuff\bin\Debug\Mathtastic.pdb
+C:\Users\Tim\Documents\GitHub\3D-engine\DrawingStuff\obj\Debug\DrawingStuff.csprojResolveAssemblyReference.cache
+C:\Users\Tim\Documents\GitHub\3D-engine\DrawingStuff\obj\Debug\DrawingStuff.Form1.resources
+C:\Users\Tim\Documents\GitHub\3D-engine\DrawingStuff\obj\Debug\DrawingStuff.Properties.Resources.resources
+C:\Users\Tim\Documents\GitHub\3D-engine\DrawingStuff\obj\Debug\DrawingStuff.csproj.GenerateResource.Cache
+C:\Users\Tim\Documents\GitHub\3D-engine\DrawingStuff\obj\Debug\DrawingStuff.exe
+C:\Users\Tim\Documents\GitHub\3D-engine\DrawingStuff\obj\Debug\DrawingStuff.pdb
