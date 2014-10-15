@@ -51,7 +51,8 @@ namespace Mathtastic.Structures
             };
         }
 
-
+<<<<<<< HEAD
+=======
         public Vector RotateXy(double degrees)
         {
             var rad = degrees.ToRadians();
@@ -98,6 +99,7 @@ namespace Mathtastic.Structures
             };
         }
 
+>>>>>>> origin/master
         public void PrintVectorToScreen()
         {
             Console.WriteLine("{{{0}, {1}, {2}}}", X, Y, Z);
